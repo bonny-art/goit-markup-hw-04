@@ -1,0 +1,477 @@
+:root {
+  /* Font */
+  --primary-font: 'Roboto', sans-serif;
+
+  /* Colors */
+  --iris-color: #4d5ae5;
+  --ocean-color: #404bbf;
+  --navy-blue-color: #2e2f42;
+  --green-color: #31d0aa;
+  --slate-color: #434455;
+  --light-slate-color: #8e8f99;
+  --cornflower-color: #e7e9fc;
+  --cloud-color: #f4f4fd;
+  --navy-blue-modal-color: #2e2f4266;
+  --gray-color: #2e2f42b2;
+  --white-color: #ffffff;
+  --dairy-color: #fcfcfc;
+
+  /* Card set parameters */
+  --items: 2;
+  --indent: 20px;
+
+  /* Others */
+}
+
+/**
+  |============================
+  | Common styles
+  |============================
+*/
+
+body {
+  font-family: var(--primary-font);
+  background-color: var(--white-color);
+  color: var(--slate-color);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* Reset */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.button {
+  font-family: inherit;
+  line-height: inherit;
+  cursor: pointer;
+}
+
+/* Base styles */
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/**
+  |============================
+  | Card set
+  |============================
+*/
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+}
+.card-set-item {
+  width: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+}
+
+/**
+  |============================
+  | Header
+  |============================
+*/
+
+.header {
+  border-bottom: 1px solid var(--cornflower-color);
+  padding: 24px 0;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--iris-color);
+  margin-right: 76px;
+}
+
+.header-logo-accent {
+  color: var(--navy-blue-color);
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-nav-item {
+}
+
+.header-nav-link {
+  padding: 24px 0;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue-color);
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus {
+  color: var(--ocean-color);
+}
+
+.header-adress {
+  margin-left: auto;
+}
+
+.header-adress-list {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+/* .header-adress-item {
+} */
+
+.header-adress-link {
+  letter-spacing: 0.02em;
+}
+
+.header-adress-link:hover,
+.header-adress-link:focus {
+  color: var(--ocean-color);
+}
+
+/**
+  |============================
+  | Hero section
+  |============================
+*/
+
+.hero {
+  background-color: var(--navy-blue-color);
+  color: var(--white-color);
+  padding: 188px 0;
+}
+
+.hero-title {
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
+}
+
+.hero-button {
+  background-color: var(--iris-color);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  min-width: 169px;
+  height: 56px;
+  color: inherit;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px 32px;
+  border: 0;
+  border-radius: 4px;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--ocean-color);
+}
+
+/**
+  |============================
+  | Advantages section
+  |============================
+*/
+
+.advantages {
+}
+
+/* .advantages-container {
+  } */
+
+/* .advantages-title {
+} */
+
+.advantages-list {
+  --indent: 24px;
+}
+
+.advantages-item {
+  --items: 4;
+}
+
+.advantages-item-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue-color);
+  margin-bottom: 8px;
+}
+
+.advantages-item-text {
+  letter-spacing: 0.02em;
+}
+
+/**
+  |============================
+  | What are we doing section
+  |============================
+*/
+
+.selection {
+  padding-top: 0;
+}
+
+.selection-title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue-color);
+  margin-bottom: 72px;
+}
+
+.selection-list {
+  --indent: 24px;
+}
+
+.selection-item {
+  --items: 3;
+}
+
+/* .selection-img {
+} */
+
+/* .portfilio-item {
+} */
+
+/**
+  |============================
+  | Team section
+  |============================
+*/
+
+.team {
+  background-color: var(--cloud-color);
+}
+
+.team-title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue-color);
+  margin-bottom: 72px;
+}
+
+.team-list {
+  --indent: 24px;
+}
+
+.team-item {
+  --items: 4;
+  background-color: var(--white-color);
+  border-radius: 0 0 4px 4px;
+}
+
+.team-img {
+}
+
+.team-caption {
+  padding: 32px 16px;
+}
+
+.team-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue-color);
+  margin-bottom: 8px;
+}
+
+.team-position {
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+/**
+  |============================
+  | Footer section
+  |============================
+*/
+
+.footer {
+  background-color: var(--navy-blue-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer-logo {
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--iris-color);
+  margin-bottom: 16px;
+}
+
+.footer-logo-accent {
+  color: var(--cloud-color);
+}
+
+.footer-text {
+  letter-spacing: 0.02em;
+  color: var(--cloud-color);
+  width: 264px;
+}
+
+/**
+  |============================
+  | Portfolio section
+  |============================
+*/
+
+.portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+/**
+  |============================
+  | Filter
+  |============================
+*/
+
+.filter-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: 0 auto 72px auto;
+}
+
+/* .filter-item {
+} */
+
+.filter-button {
+  background-color: var(--cloud-color);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--iris-color);
+  border: 1px solid var(--cornflower-color);
+  border-radius: 4px;
+  display: block;
+  padding: 11px 24px;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--ocean-color);
+  color: var(--white-color);
+  border-color: transparent;
+}
+
+/**
+  |============================
+  | Cases
+  |============================
+*/
+
+.portfolio-list {
+  row-gap: 48px;
+  --indent: 24px;
+  /* justify-content: space-between; */
+}
+
+.portfolio-item {
+  --items: 3;
+}
+
+.portfolio-img {
+}
+
+.portfolio-caption {
+  padding: 32px 16px;
+  border: 1px solid var(--cornflower-color);
+  border-top: none;
+}
+
+.portfolio-item-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue-color);
+  margin-bottom: 8px;
+}
+
+.portfolio-item-text {
+  letter-spacing: 0.02em;
+}
