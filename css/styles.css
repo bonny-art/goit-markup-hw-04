@@ -240,6 +240,7 @@ img {
 
 .hero {
   max-width: 1440px;
+  margin: 0 auto;
 
   background: rgb(var(--cl-navy-blue));
   padding: 188px 0;
